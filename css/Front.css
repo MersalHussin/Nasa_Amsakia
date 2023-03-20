@@ -1,0 +1,176 @@
+body{
+box-sizing: border-box;
+margin: 0;
+font-family: 'Rakkas', cursive;
+height: 100vh;
+direction: rtl;
+}
+
+:root{
+    --main-color:#172cf9;
+    --white-color:-#ffffff;
+    --second-color:#Ef202a;
+    --black-color:#000000;
+    --third-color:#050a30;
+
+}
+
+
+body img {
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+body .Parent {
+    min-height: 100vh;
+    background-image: url(../images/Landing\ page.png);
+    background-size: cover;
+    position: relative;
+}
+.Parent .text {
+text-align: center;
+overflow: hidden;
+position: relative;
+z-index: 99;
+overflow: hidden;
+margin-left: 20px;
+margin-right: 20px;
+
+
+}
+.Parent .text h1{
+    margin: 0 ;
+    padding-top: 125px;
+    font-size: 60px;
+    color: var(--second-color);
+    margin: 0 auto;
+}
+.Parent .text h2 {
+    font-size: 20px;
+}
+.Parent .text p {
+    color: white;
+    width: 350px;
+    line-height: 2;
+    margin: 10px auto;
+    font-family: 'El Messiri', sans-serif;
+    margin-top: 30px;
+}
+.Parent  .logo{
+    width: 50px;
+    position: absolute;
+    height: 50px;
+    direction: rtl;
+    left: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+
+@media (max-width:767px){
+    .Parent .text p {
+        width: 300px;
+    }
+    .Parent .text h1{
+        margin: 0 ;
+        padding-top: 125px;
+        font-size: 40px;
+        color: var(--second-color);
+        margin: 0 auto;
+        }
+    }
+
+.Parent .boutton{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    margin-top: 50px;
+    margin-top: 20px;
+}
+.Parent .boutton a {
+    padding: 20px 10px ;
+    background-color: var(--third-color);
+    text-decoration: none;
+    color: var(--second-color);
+    font-size: 20px;
+    border: white 2px solid;
+    outline:  var(--third-color) 4px solid;
+    transition: 0.3s;
+    border-radius: 20px 10px 20px 10px;
+    z-index: 99;
+    cursor: pointer;
+    animation-name: change-color;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.Parent .boutton i {
+margin-right: 10px;
+}
+
+.Parent .boutton:hover a{
+background-color: var(--third-color);
+outline:  var(--second-color) 4px solid;
+
+}
+
+.Parent .text img{
+position: relative;
+top: -5px;
+width: 150px;
+height: 150px;
+margin-bottom: 50px;
+z-index: 1;
+animation-name: fanous;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-duration: 1s;
+animation-direction: alternate;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--third-color);
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--second-color);
+}
+footer a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #088fad;
+}
+footer img {
+    width: 30px;
+    height: 35px;
+    margin: 5px;
+}
+
+
+@keyframes fanous{
+    0%{
+        transform: translateX(-50px) rotate(20deg);
+    }
+    100%{
+        transform: translateX(50px) rotate( -20deg);
+    }
+}
+
+@keyframes change-color{
+    0%{
+        outline-color: var(--third-color);
+        border-color: #172cf9;
+
+    }
+    100% {
+        outline-color:var(--second-color) ;
+        border-c: white;
+    }
+}

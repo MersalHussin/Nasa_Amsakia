@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --main-color:#172cf9;
+    --white-color:-#ffffff;
+    --second-color:#Ef202a;
+    --black-color:#000000;
+    --third-color:#050a30;
+
+  }
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    list-style-type: none;
+}
+body{
+    direction: rtl;
+    font-family: 'Rakkas', cursive;
+    background:var(--second-color);
+    background: linear-gradient(176deg, #9c1720 10%, #2e3fb6 20%, #12194c 67%, #76171c 100%);
+}
+
+.sidebar{
+    height: fit-content;
+    width: 250px;
+    color: white;
+    background-color: var(--main-color);
+}
+ul{
+    text-align: center;
+}
+.sidebar h3 {
+    color: var(--second-color);
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar li a {
+    transition: 0.3s;
+}
+.sidebar li  .active {
+    color: var(--second-color);
+}
+.sidebar li a:hover {
+    color: var(--second-color);
+}
+.amsakia-page{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(200px , 1fr));
+}
+.amsakia-page .Amskaia{
+    border-radius: 50px 0 50px 0px;
+}
+.amsakia-page img {
+    max-width: 100%;
+}
+.info-amsakia a{
+    padding: 5px 20px 5px 20px;
+    transition: 0.3s;
+}
+.info-amsakia a:hover{
+    background-color: #172cf9;
+}
+.amsakia-page h1 {
+    border-radius: 50px 6px 6px 6px;
+}
+.content h1 {
+    color: var(--second-color);
+    background-color: var(--main-color);
+}
+.Amskaia{
+    transition: 0.3s;
+    overflow: hidden;
+    box-shadow: 0 0 7px 0px var(--second-color);
+    background-color: #050a30c9;
+    }
+    .Amskaia a{
+        background-color: var(--second-color);
+        }
+.amsakia-page h2{
+color: white;
+}
+.Amskaia:hover{
+    transform: scale(1.1) ;
+}
+.Amskaia img{
+    transition: 1s;
+    }
+.Amskaia:hover img{
+    transform: scale(1.05) rotate(5deg);
+    }
+    .Amskaia p {
+        font-size: 25px;
+    }
+
+footer{
+    background-color: var(--main-color);
+}
+footer a{
+    color: white;
+    transition: 0.3s;
+}
+footer a:hover{
+    color: rgb(0, 4, 255);
+}
+@media (max-width:401px){
+    .sidebar span {
+        font-size: 11px;
+    }
+}
+.content{
+    text-align: center;
+}
+.doaa p {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.logo{
+    animation-name: logo-ani;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+::selection{
+    background-color: var(--second-color);
+    color: var(--third-color);
+}
+
+@keyframes logo-ani {
+    0%{
+        transform: rotate(25deg)  translateX(70px);
+    }
+
+    100%{
+        transform: rotate(-25deg) translateX(-70px);
+    }
+}
